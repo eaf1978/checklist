@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f6f8">
+  <meta name="description" content="Checklist para preparar gravações de videoaulas.">
+  <title>Pronto para gravar? — Checklist</title>
+  <script>
+    (function(){var t=null;try{t=localStorage.getItem("guia-gravacao-theme-v1")}catch(e){}
+    var d=t?t==="dark":window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.dataset.theme=d?"dark":"light";
+    document.querySelector('meta[name="theme-color"]').content=d?"#11181d":"#f4f6f8";})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o checklist</a>
+  <main class="app" id="conteudo">
+    <header class="topbar">
+      <span class="brand">Guia de gravação</span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Ativar tema escuro">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <span id="themeLabel">Modo escuro</span>
+      </button>
+    </header>
+
+    <section class="intro">
+      <h1>Pronto para gravar?</h1>
+      <p class="subtitle">Confira cada etapa antes de apertar o botão de gravar, da roupa ao teleprompter. Toque em um item para marcá-lo.</p>
+    </section>
+
+    <div class="progress-card" role="group" aria-label="Progresso do checklist">
+      <div class="progress-top"><span id="progressNote">Marque cada etapa conforme concluir.</span><strong id="progressText" aria-live="polite">0 de 20</strong></div>
+      <div class="progress-track" id="progressTrack" role="progressbar" aria-label="Tarefas concluídas" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+
+    <div class="checklist">
+      <section class="group" aria-labelledby="g-visual" data-section="visual">
+        <header class="group-head">
+          <span class="step-num" aria-hidden="true">1</span>
+          <div><h2 id="g-visual">Imagem e apresentação</h2><p>Cuide do visual e da presença diante da câmera.</p></div>
+          <span class="group-count" data-count="visual">0/4</span>
+        </header>
+        <ul class="task-list">
+        <li><label class="task"><input type="checkbox" data-group="visual" data-id="visual-1"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Escolher a roupa</strong><small>Prefira peças confortáveis, sem estampas miúdas, listras finas ou brilho excessivo.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="visual" data-id="visual-2"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Conferir aparência e acessórios</strong><small>Verifique cabelo, maquiagem (se usar), óculos, joias e itens que possam fazer ruído.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="visual" data-id="visual-3"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Separar água e itens necessários</strong><small>Deixe água por perto e mantenha objetos pessoais fora do enquadramento.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="visual" data-id="visual-4"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Ensaiar postura, ritmo e pronúncia</strong><small>Fale com naturalidade, olhe para a lente e faça pausas entre as ideias.</small></span></label></li>
+        </ul>
+      </section>
+
+      <section class="group" aria-labelledby="g-conteudo" data-section="conteudo">
+        <header class="group-head">
+          <span class="step-num" aria-hidden="true">2</span>
+          <div><h2 id="g-conteudo">Conteúdo e teleprompter</h2><p>Organize a aula para facilitar a gravação e a compreensão.</p></div>
+          <span class="group-count" data-count="conteudo">0/5</span>
+        </header>
+        <ul class="task-list">
+        <li><label class="task"><input type="checkbox" data-group="conteudo" data-id="conteudo-1"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Definir o objetivo da aula</strong><small>Tenha clareza sobre o que o aluno deverá saber ou conseguir fazer ao final.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="conteudo" data-id="conteudo-2"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Organizar o conteúdo em uma sequência lógica</strong><small>Prepare abertura, tópicos principais, exemplos, síntese e encerramento.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="conteudo" data-id="conteudo-3"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Revisar o texto do teleprompter</strong><small>Confira informações, nomes, números, links e termos técnicos.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="conteudo" data-id="conteudo-4"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Adaptar o texto para a fala</strong><small>Use frases curtas, linguagem direta e indicações de pausa; evite texto com cara de leitura.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="conteudo" data-id="conteudo-5"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Carregar e testar o teleprompter</strong><small>Ajuste velocidade, tamanho da fonte e posição do texto. Confira se o olhar fica próximo à lente.</small></span></label></li>
+        </ul>
+      </section>
+
+      <section class="group" aria-labelledby="g-ambiente" data-section="ambiente">
+        <header class="group-head">
+          <span class="step-num" aria-hidden="true">3</span>
+          <div><h2 id="g-ambiente">Ambiente e equipamentos</h2><p>Prepare o espaço para imagem e áudio consistentes.</p></div>
+          <span class="group-count" data-count="ambiente">0/5</span>
+        </header>
+        <ul class="task-list">
+        <li><label class="task"><input type="checkbox" data-group="ambiente" data-id="ambiente-1"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Organizar o cenário</strong><small>Retire distrações, confira o fundo e deixe à mão apenas o que será usado.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="ambiente" data-id="ambiente-2"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Verificar iluminação</strong><small>Ilumine o rosto de forma uniforme e evite janelas ou luzes fortes atrás de você.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="ambiente" data-id="ambiente-3"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Checar enquadramento e câmera</strong><small>Posicione a lente na altura dos olhos; confira foco, espaço sobre a cabeça e orientação.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="ambiente" data-id="ambiente-4"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Testar microfone e áudio</strong><small>Faça um teste de voz, escute o resultado e reduza ruídos, ventiladores e notificações.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="ambiente" data-id="ambiente-5"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Conferir arquivos e materiais de apoio</strong><small>Abra apresentações, imagens, demonstrações e outros recursos antes de começar.</small></span></label></li>
+        </ul>
+      </section>
+
+      <section class="group" aria-labelledby="g-final" data-section="final">
+        <header class="group-head">
+          <span class="step-num" aria-hidden="true">4</span>
+          <div><h2 id="g-final">Última checagem</h2><p>Evite interrupções e confirme que está tudo pronto.</p></div>
+          <span class="group-count" data-count="final">0/6</span>
+        </header>
+        <ul class="task-list">
+        <li><label class="task"><input type="checkbox" data-group="final" data-id="final-1"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Silenciar celular e notificações</strong><small>Ative o modo não perturbe e avise as pessoas próximas sobre a gravação.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="final" data-id="final-2"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Conferir bateria, memória e espaço</strong><small>Verifique carga, armazenamento e alimentação elétrica dos equipamentos.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="final" data-id="final-3"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Fazer uma gravação de teste</strong><small>Grave alguns segundos e confira imagem, som, foco e sincronização.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="final" data-id="final-4"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Combinar sinais e retomadas</strong><small>Alinhe com a equipe como iniciar, pausar e repetir trechos sem pressa.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="final" data-id="final-5"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Respirar e se posicionar</strong><small>Ajuste a cadeira, relaxe os ombros e faça uma pausa antes de começar.</small></span></label></li>
+        <li><label class="task"><input type="checkbox" data-group="final" data-id="final-6"><span class="checkmark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><span class="task-copy"><strong>Confirmar autorização e materiais</strong><small>Verifique se imagens, músicas, marcas ou materiais de terceiros estão liberados para uso.</small></span></label></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="done-mark" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></div>
+      <div><strong id="finishTitle">Seu preparo começa aqui.</strong><p id="finishMessage">O progresso fica salvo neste aparelho. Pode fechar e voltar depois.</p></div>
+    </footer>
+    <button class="reset-button" id="resetButton" type="button">Reiniciar checklist</button>
+    <p class="privacy-note">Salvo apenas neste navegador. Em outro aparelho, será preciso marcar as tarefas novamente.</p>
+  </main>
+
+  <dialog class="dialog" id="resetDialog" aria-labelledby="resetTitle">
+    <h2 id="resetTitle">Reiniciar checklist?</h2>
+    <p>Todas as tarefas marcadas serão desmarcadas. Não dá para desfazer.</p>
+    <div class="dialog-actions">
+      <button type="button" class="btn" id="resetCancel">Cancelar</button>
+      <button type="button" class="btn btn-danger" id="resetConfirm">Reiniciar</button>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
